@@ -1,0 +1,5 @@
+Ficou complexo para fazer o código durante a aula então estou descrevendo os passos que farei em casa para resolver:
+
+- Primeiro devo utilizar algum algoritmo de sorting de baixa complexidade algoritmica de tempo para ordenar o vetor 'nums' de modo que todos os números iguais fiquem continuos no vetor. Exemplo [0, 4, 3, 4, 0] teria que ficar [0, 0, 3, 4, 4].
+- Depois devo criar um novo vetor 'res' de tamanho 'k', percorrer o vetor 'nums', contar os 'k' números que mais apareceram no vetor 'nums' e inserir no vetor 'res' sobrescrevendo os números com menores frequência por números com maiores frequências.
+- Por fim devo retornar o vetor 'res'.
