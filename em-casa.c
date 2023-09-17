@@ -85,15 +85,31 @@ int *topKFrequent(int *nums, int numsSize, int k, int *returnSize)
 
 int main(int argc, char const *argv[])
 {
-    int arr[6] = {1, 1, 1, 2, 2, 3};
-
     int returnSize;
 
-    int *res = topKFrequent(arr, 6, 2, &returnSize);
-
-    for (int i = 0; i < 2; i++)
+    int arr1[6] = {1, 1, 1, 2, 2, 3};
+    int *res1 = topKFrequent(arr1, 6, 2, &returnSize);
+    for (int i = 0; i < returnSize; i++)
     {
-        printf("%d \n", res[i]);
+        printf("%d \n", res1[i]);
+    }
+
+    printf("\n");
+
+    int arr2[1] = {1};
+    int *res2 = topKFrequent(arr2, 1, 1, &returnSize);
+    for (int i = 0; i < returnSize; i++)
+    {
+        printf("%d \n", res2[i]);
+    }
+
+    printf("\n");
+
+    int arr3[4] = {0, 3, 0, 1};
+    int *res3 = topKFrequent(arr3, 4, 3, &returnSize);
+    for (int i = 0; i < returnSize; i++)
+    {
+        printf("%d \n", res3[i]);
     }
 
     return 0;
